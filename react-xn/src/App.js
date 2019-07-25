@@ -5,7 +5,7 @@ import List from './pages/List';
 import Cart from './pages/Cart';
 import Mine from './pages/Mine';
 import Xiangqing from './pages/Xiangqing';
-import Login from './pages/Login';
+import Reg from './pages/Reg';
 import{Switch,Route,Redirect,withRouter,} from 'react-router-dom';
 import { Menu, Icon, } from 'antd';
 import 'moment/locale/zh-cn';
@@ -74,7 +74,7 @@ class App extends Component{
         component={AllRouter[item.name]} />)
     }
     <Route path='/xiangqing/:name' component={Xiangqing}/>
-    <Route path='/login/' component={Login}/>
+    <Route path='/reg/' component={Reg}/>
     <Redirect from='/' to='/home' exact/>
   </Switch>
 <footer style={{position:"fixed",bottom:'0',border:'1px solid #ccc',width:'100%',}}>
